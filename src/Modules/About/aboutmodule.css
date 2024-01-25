@@ -1,0 +1,50 @@
+.about-module-top-text{
+  text-align:center;
+  padding:1rem;
+  border:1px solid black;
+  margin:1rem;
+  background-color:black;
+  color:white;
+  box-shadow:0px 0px 5px 3px grey;
+}
+.about-module-benifits{
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  flex-wrap:wrap;
+}
+.about-module-benifits div{
+  width:15rem;
+  text-align:center;
+}
+.about-module-benifits p{
+  font-family:rosybrown;
+  margin:1rem;
+}
+.about-module-team-top{
+  text-align:center;
+  padding:1rem;
+}
+.about-module-team-bottom{
+  display:flex;
+  justify-content:space-around;
+  flex-wrap:wrap;
+  gap:1rem;
+}
+.top-about-card{
+  min-width:15rem;
+  width:20vw;
+  height:auto; 
+  box-shadow:1px 1px 5px grey;
+  transition:all .5s ease-in-out;
+}
+.top-about-card:hover{
+ transform:scale(1.05); 
+}
+.top-about-card img{
+  width:100%;
+  padding:.5rem;
+}
+.top-about-card-bottom{
+  margin:.5rem 1rem !important;
+}

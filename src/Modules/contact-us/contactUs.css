@@ -1,0 +1,114 @@
+
+.contact-form-main-section{
+    display:flex;
+    justify-content:space-around;
+    padding: 3rem 0;
+}
+.contact-form-section{
+    width:40vw;
+
+}
+.contact-form-section input{
+    width:100%;
+    background-color:white;
+    color:black;
+    padding:.7rem;
+    border-radius:8px;
+}
+.contact-form-section label{
+    padding:1rem 0;
+    font-weight:500;
+}
+.contact-form-section textarea{
+    width:100%;
+    background-color:white;
+    color:black;
+    padding:.7rem;
+    border-radius:8px;
+}
+.contact-form-section button{
+    text-align:center;
+    width:100%;
+    margin:1rem 0;
+    border-radius:8px;
+    background-color:blue;
+}
+.contact-photo-section{
+    width:40vw;
+    overflow:hidden;
+    display:flex;
+    align-items:center;
+}
+.contact-photo-section img{
+    width:100%;
+}
+
+.contact-Map-Section{
+    margin:1rem 0 5rem 1rem;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+.mapouter{
+    position:relative;
+    text-align:right;
+    width:50%;
+    height:400px;
+}
+.gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    width:100%;
+    height:400px;
+}
+.gmap_iframe {
+    height:400px!important;
+    width:100%;
+    border:1px solid lightgrey;
+    border-radius:8px;
+}
+.contact-map-text{
+    overflow:hidden;
+    width:45%;
+}
+.contact-map-text p{
+    padding: 0 1rem 1rem 2rem;
+
+}
+.testing{
+    color:red;
+}
+@media screen and (max-width: 600px){
+  .contact-form-main-section{
+    display:grid;
+    
+  }
+   .contact-form-section{
+    order:2;
+     width:90vw;
+  }
+  .contact-photo-section{
+    order:1;
+    width:90vw;
+    height:20vh;
+  } 
+  .contact-photo-section img{
+    order:1;
+    width:auto;
+    height:20vh;
+  } 
+  .contact-Map-Section {
+    display:grid;
+  }
+  .contact-Map-Section{
+    width:100vw;
+    margin:0;
+  }
+  .mapouter{
+    width:100vw;
+  }
+  .contact-map-text{
+    width:100vw;
+    padding:2rem 1rem;
+  }
+}

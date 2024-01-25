@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@400&family=Young+Serif&display=swap');
+
+.Rent-section-main h5{
+    font-size: large;
+    font-family:  serif;
+}
+.Rent-section-main p{
+    font-family: serif;
+    padding:1rem;
+  font-size:1.5rem;
+  font-weight:600;
+}
+
+.Rent-section-top{
+    text-align:center;
+}
+ 
+.Rent-section-bottom{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    margin-bottom: 1.5rem;
+}
+.Rent-section-bottom div{
+    width: 20vw;
+}
+.Rent-section-bottom-img1{
+    height:100%;
+    width:25vw;
+}
+.Rent-section-bottom-imges{
+    height:30vh;
+    width:20vw;
+}
+.Rent-section-bottom p{
+    font-size:1.3rem;
+}
+@media screen and (max-width:1200px){
+  .Rent-section-bottom-imges{
+    height:25vh;
+    width:20vw;
+  }
+}
+@media screen and (max-width:700px){
+  .Rent-section-bottom-imges{
+    height:20vh;
+    width:20vw;
+  }
+  .Rent-section-main p{
+      padding:1rem;
+    font-size:1rem;
+    font-weight:400;
+  }
+}
+@media screen and (max-width:550px){
+  .Rent-section-bottom div{
+      width: 30vw;
+  }
+  .Rent-section-bottom-imges{
+    height:12vh;
+    width:100%;
+  }
+  .Rent-section-main p{
+      padding: 0.3rem 1rem;
+    font-size:1rem;
+    font-weight:400;
+  }
+}

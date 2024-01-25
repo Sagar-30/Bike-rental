@@ -1,0 +1,84 @@
+.include-Section-main {
+    background-image: url('../../../public/Assistence.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black; 
+    background-position: bottom;
+}
+  
+  
+.include-Section-top{
+ 
+    text-align: center;
+    /* backdrop-filter: blur(1px); */
+    background: rgba(0, 0, 0, .3);
+  padding:1rem;
+  overflow:hidden;
+}
+.include-Section-top h3{
+    padding: 2rem 0 0 0 ;
+    margin:1rem;
+    font-size:1.5rem;
+    color:white;
+    text-shadow: 2px 1px 1px black;
+}
+.include-Section-top p{
+    padding: 2rem;
+    color:white;
+    font-size:1.3rem;
+    font-weight:600;
+    text-shadow: 2px 1px 1px black;
+}
+
+.include-Section-bottom{
+    display:flex;
+    justify-content: space-around;
+    background: rgba(0, 0, 0, .3);
+    margin:0;
+    padding:3.5rem;
+    transition: .4s ease-in-out;
+  overflow:hidden;
+}
+.include-Section-bottom div{
+    background-color: lightgray;
+    margin:1rem;
+    border-radius: 50%;
+    text-align: center;
+}
+.include-Section-bottom div:hover{
+    background-color: lightgreen;
+}
+.include-Section-bottom div p{
+   font-size: 1.2rem;
+   padding: 2.2rem;
+}
+.include-section-bottom-div2{
+    transform:translateY(-4rem)
+}
+.include-section-bottom-div3{
+    transform:translateY(-2rem)
+}
+.include-section-bottom-div5{
+    transform:translateY(-2rem)
+}
+.include-section-bottom-div6{
+    transform:translateY(-4rem)
+}
+
+@media screen and (max-width:980px){
+  .include-Section-bottom div p{
+     font-size: 1rem;
+     padding: 1.2rem;
+  }
+  .include-Section-bottom div{
+      background-color: lightgray;
+      margin:1rem;
+      border-radius: 50%;
+      text-align: center;
+  }
+}
+@media screen and (max-width:700px){
+  .include-Section-main {
+    display:none;
+  }
+}

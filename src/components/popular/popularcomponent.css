@@ -1,0 +1,56 @@
+.Popular-section-main{
+    background-image: url('https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Touring_Bird_Expansion_-hero.width-600.format-webp.webp');
+     display:flex;
+     flex-wrap: wrap;
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+.Popular-section-main div{
+  padding:1.5rem 0;
+    width:50%;
+    height:auto;
+    text-align:center;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    align-items: start;
+    box-sizing: border-box;
+}
+.Popular-section-main div p{
+    padding:1.5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:large;
+    color:white;
+}
+
+  @media screen and (max-width: 768px){
+  .Popular-section-main-icons{
+   height:4rem !important; 
+  }
+  .Popular-section-main p{
+    font-size:small;
+  }
+}
+
+@media screen and (max-width: 568px){
+  .Popular-section-main-icons{
+   height:3rem !important; 
+    padding:0.5rem !important;
+  }
+  .Popular-section-main p{
+    font-size:1rem;
+  }
+}
+
+@media screen and (max-width: 400px){
+  .Popular-section-main-icons{
+   height:3rem !important; 
+    padding:.5rem !important;
+    margin:.5rem !important;
+  }
+    .Popular-section-main div p {
+    font-size:.7rem;
+    padding:0.3rem;
+    margin:0rem;
+  }
+
+}

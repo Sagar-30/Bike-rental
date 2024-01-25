@@ -1,0 +1,114 @@
+.navbar-section-main{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.Navbar-hamburger-div{
+ display:none;
+}
+.navbar-icon-div{
+    padding:1rem;
+}
+.navber-links-div{
+    padding:1rem;
+}
+.navber-links-div ul{
+list-style-type: none;
+display:flex;
+justify-content:space-around;
+color:black;
+}
+.navber-links-div ul li{
+padding:0 1rem;
+}
+.navber-links-div ul a{
+    color:black;
+    transition: .2 ease-in-out;
+    text-decoration:none;
+    }
+ .navber-links-div ul a:hover{
+        color:blue; 
+        }
+
+.responsive-navbar-main{
+  position:fixed;
+  top:0;
+  background:rgba(0,0,0,0.7);
+  z-index:12;
+  color:white;
+  width:100vw;
+  height:100%;
+  overflow:auto;
+}
+.responsive-navbar-icon-div{
+ text-align:end; 
+  color:black;
+  padding: 2.5rem 2.5rem;
+  width:auto;
+  height:2rem;
+}
+.responsive-navbar-main-box{
+  max-width:25rem;
+  background-color:white;
+  height:100%;
+}
+.responsive-navbar-links-div ul{
+  list-style-type:none;
+  text-decoration:none;
+}
+.responsive-navbar-links-div ul li{
+  list-style-type:none;
+  text-decoration:none;
+  color:black;
+  padding:2rem 0;
+}
+.responsive-navbar-links-div ul a{
+  list-style-type:none;
+  text-decoration:none;
+  color:black;
+}
+.responsive-navbar-contact-div{
+  color:black;
+}
+.responsive-navbar-contact-text p{
+  padding:1rem;
+  border:1px solid black;
+}
+.responsive-navbar-contact-icons p{
+  padding:0 0 1rem 1rem;
+}
+.responsive-navbar-contact-text-icons{
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  height:15vh;
+}
+/* .responsive-navbar-contact-text span{
+  padding: auto;
+} */
+
+
+@media screen and (max-width: 768px) {
+  .navber-links-div{
+    display:none;
+  }
+  .Navbar-hamburger-div{
+   display:unset;
+  }
+  .navbar-icon-div{
+      padding:.3rem 1rem;
+  }
+  .navber-links-div{
+      padding:.3rem 1rem;
+  }
+  hr{
+    margin:0 0 0.3rem 0;
+  }
+  .responsive-navbar-icon-div{
+    padding: 1rem 2.5rem;
+  }
+  .responsive-navbar-links-div ul li{
+    padding:1rem 0;
+  }
+}
+        

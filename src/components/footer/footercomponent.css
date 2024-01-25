@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&family=Roboto:wght@300&display=swap');
+.footer-section-top{
+background-color:black;
+color:white;
+width:100vw;
+height:auto;
+display:flex;
+justify-content:space-around;
+align-items:center;
+}
+.footer-section-div1 p{
+ padding:.5rem; 
+}
+.footer-section-top h2{
+font-family: 'Roboto', sans-serif;
+padding:2rem 1rem;
+}
+.footer-section-top p{
+  font-family: 'Open Sans', sans-serif; 
+}
+.footer-section-top dt{
+  font-family: 'Open Sans', sans-serif;
+  padding: 1.5rem;
+  font-weight:400;
+}
+.footer-section-top dt{
+  font-family: 'Roboto', sans-serif;
+    font-size:1.3rem;
+  padding:1rem 1rem .5rem 1rem;
+}
+.footer-section-top dd{
+    padding:0 1rem;
+}
+.footer-section-top div{
+width:23vw;
+height:100%;
+}
+.footer-section-div1-icons{
+height:3.6rem;
+width:auto;
+padding:1rem;
+transition: ease-in-out .2s;
+}
+.footer-section-div1-icons:hover{
+    transform: scale(1.2);
+}
+.footer-section-div3 dl{
+cursor:pointer;
+}
+.footer-section-div3 dl:hover{
+    color: blue;
+}
+
+
+.custom-modal{
+    width: 100%;
+  justify-self:center;
+}
+.custom-modal h6{
+    padding:1rem 0 0 1rem;
+}
+.custom-modal p{
+    padding: 0 1rem;
+}
+
+@media screen and (max-width: 850px) {
+  .footer-section-top dt{
+    font-family: 'Roboto', sans-serif;
+      font-size:1rem;
+    padding:1rem 1rem .5rem 1rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .footer-section-top{
+  height:auto;
+  display:flex;
+    flex-wrap:wrap;
+  }
+  .footer-section-top div{
+  width:50vw;
+  height:auto;
+  }
+}
+@media screen and (max-width: 470px) {
+  .footer-section-top{
+    display: table-footer-group;
+    justify-content:center;
+    align-items:center;
+    }
+    .footer-section-top div{
+      width:100vw;
+      height:auto;
+      }
+  .footer-section-top dl{
+    font-size:.8rem;
+  }
+  .footer-section-top dt{
+    font-size:.8rem;
+  }
+  .footer-section-top dd{
+    font-size:.8rem;
+  }
+  .footer-section-top p{
+    font-size:.8rem;
+  }
+}

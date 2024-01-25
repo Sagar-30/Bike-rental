@@ -1,0 +1,185 @@
+.Rent-module-top{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background-color:black;
+  color:white;
+  width:100vw;
+  height:auto;
+}
+.Rent-module-top-left{
+      font-size:1.2rem;
+    text-align:center;
+    align-items:center;
+    width:40vw;
+    height:100%;
+    padding:1% 10%;
+    }
+    .Rent-module-top-right{
+        width:50vw;
+        height:100%;
+      text-align:center;
+    }
+    .Rent-module-top-right img{
+        width:100%;
+      height:auto;
+    }
+.Rent-module-bottom-top-section{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:5vh;
+  font-family:fantasy;
+  margin-top:.5rem;
+}
+.Rent-module-bottom-top-section h5{
+  text-shadow:1px 1px 1px grey ;
+}
+.Rent-module-bottom-bottom-section{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    flex-wrap:wrap;
+}
+.rent-section-main-card{
+        width:27vw;
+  box-shadow:3px 2px 2px 4px lightgrey;
+        margin:1rem;
+        background-color:black;
+        color:white;
+        }
+        .rent-card-img-section{
+        height:35vh;
+        width:27vw;
+           padding:.5rem;
+        box-shadow:1px 2px 4px lightgrey;
+        }
+        .rent-card-img-section img{
+        height:100%;
+        width:100%;
+        }
+        .rent-card-text-section{
+            height:auto;
+            width:100%;
+            padding:1rem;
+        }
+        .rent-card-text-section h3{
+            padding:1rem;
+        }
+        .rent-card-text-section p{
+            padding:1rem;
+        }
+        .rent-card-text-section button{
+            background-color:blue;
+            border-radius:8px;
+        }
+.rent-section-model-body{
+    overflow:hidden;
+    background-color:white;
+    color:black;
+    text-align:center;
+}
+.rent-section-model-body img{
+width:50%;
+box-shadow: 1px 2px 2px lightgrey;
+}
+.rent-section-model-body h2{
+padding:1rem;
+font-size:3rem;
+font-family:roboto;
+}
+.rent-section-model-body p{
+    margin:1.5rem 1rem;
+}
+.rent-section-model-body label{
+    margin:1rem 1rem 0.5rem 0;
+  font-family:sans-serif;
+}
+.rent-section-model-body input{
+background-color:white;
+color:black;
+padding:.3rem 5rem .3rem .5rem;
+  width:100%;
+}
+.rent-section-model-body button{
+    margin:2rem;
+    background-color:blue;
+    color:white;
+    padding:.5rem;
+    width:80%;
+    margin-left:10%;
+    border-radius:8px;
+    font-size:1.5rem;
+}
+.rent-section-form-MainBody{
+  background: rgba(0, 0, 0, 0.2);
+  padding:1.5rem;
+  border:1px solid white;
+  text-align:start;
+}
+
+@media screen and (max-width:800px){
+  .rent-section-main-card{
+    width:45vw;
+    box-shadow:3px 2px 2px 4px lightgrey;
+    margin:1rem;
+    background-color:black;
+    color:white;
+    }
+  .rent-card-img-section{
+    width:100%;
+    height:40vh;
+    padding:.5rem;
+    background-color:white;
+    }
+  .rent-card-text-section h3{
+      padding:.7rem;
+  }
+  .rent-card-text-section p{
+      padding:.7rem;
+  }
+}
+
+@media screen and (max-width:650px){
+  .rent-section-main-card{
+    width:80vw;
+    }
+  .rent-card-img-section{
+    width:100%;
+    height:40vh;
+    padding:.5rem;
+    background-color:white;
+    }
+  .Rent-module-top-left{
+    font-size:.7rem;
+  }
+  .rent-card-text-section h3{
+      padding:.5rem;
+  }
+  .rent-card-text-section p{
+      padding:.5rem;
+  }
+}
+@media screen and (max-width:470px){
+  .Rent-module-top{
+    display:flex;
+    }
+  .rent-section-main-card{
+    width:90vw;
+    }
+  .rent-card-img-section{
+    width:100%;
+    height:38vh;
+    padding:.5rem;
+    background-color:white;
+    }
+  .Rent-module-top-left{
+    font-size:3vw;
+  }
+  .rent-card-text-section h3{
+      padding:.3rem;
+  }
+  .rent-card-text-section p{
+      padding:.3rem;
+  }
+}
