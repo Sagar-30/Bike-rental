@@ -1,185 +1,273 @@
-.Rent-module-top{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  background-color:black;
-  color:white;
-  width:100vw;
-  height:auto;
+/* General Container Styles */
+.Rent-module-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #222;
+  color: white;
+  width: 100%;
+  padding: 1rem 5%;
+  border-bottom: 2px solid #444;
 }
-.Rent-module-top-left{
-      font-size:1.2rem;
-    text-align:center;
-    align-items:center;
-    width:40vw;
-    height:100%;
-    padding:1% 10%;
-    }
-    .Rent-module-top-right{
-        width:50vw;
-        height:100%;
-      text-align:center;
-    }
-    .Rent-module-top-right img{
-        width:100%;
-      height:auto;
-    }
-.Rent-module-bottom-top-section{
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  height:5vh;
-  font-family:fantasy;
-  margin-top:.5rem;
+
+.Rent-module-top-left {
+  font-size: 1.2rem;
+  text-align: left;
+  width: 40%;
+  padding: 0.5rem;
 }
-.Rent-module-bottom-top-section h5{
-  text-shadow:1px 1px 1px grey ;
+
+.Rent-module-top-right {
+  width: 50%;
+  text-align: right;
 }
-.Rent-module-bottom-bottom-section{
-    display:flex;
-    justify-content:space-around;
-    align-items:center;
-    flex-wrap:wrap;
+
+.Rent-module-top-right img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
-.rent-section-main-card{
-        width:27vw;
-  box-shadow:3px 2px 2px 4px lightgrey;
-        margin:1rem;
-        background-color:black;
-        color:white;
-        }
-        .rent-card-img-section{
-        height:35vh;
-        width:27vw;
-           padding:.5rem;
-        box-shadow:1px 2px 4px lightgrey;
-        }
-        .rent-card-img-section img{
-        height:100%;
-        width:100%;
-        }
-        .rent-card-text-section{
-            height:auto;
-            width:100%;
-            padding:1rem;
-        }
-        .rent-card-text-section h3{
-            padding:1rem;
-        }
-        .rent-card-text-section p{
-            padding:1rem;
-        }
-        .rent-card-text-section button{
-            background-color:blue;
-            border-radius:8px;
-        }
-.rent-section-model-body{
-    overflow:hidden;
-    background-color:white;
-    color:black;
-    text-align:center;
+
+/* Bottom Section */
+.Rent-module-bottom-top-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5vh;
+  font-family: 'fantasy', sans-serif;
+  margin-top: 1rem;
+  padding: 0.5rem;
 }
-.rent-section-model-body img{
-width:50%;
-box-shadow: 1px 2px 2px lightgrey;
+
+.Rent-module-bottom-top-section h5 {
+  text-shadow: 1px 1px 1px gray;
 }
-.rent-section-model-body h2{
-padding:1rem;
-font-size:3rem;
-font-family:roboto;
+
+/* Rent Cards Layout */
+.Rent-module-bottom-bottom-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem;
+  gap: 1.5rem;
 }
-.rent-section-model-body p{
-    margin:1.5rem 1rem;
+
+/* Rent Card Styles */
+.rent-section-main-card {
+  width: 30%;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+  background: linear-gradient(145deg, #333, #444);
+  color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
 }
-.rent-section-model-body label{
-    margin:1rem 1rem 0.5rem 0;
-  font-family:sans-serif;
+
+.rent-section-main-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+  border: 1px solid #007bff;
 }
-.rent-section-model-body input{
-background-color:white;
-color:black;
-padding:.3rem 5rem .3rem .5rem;
-  width:100%;
+
+.rent-card-img-section {
+  height: 200px;
+  width: 100%;
+  padding: 1rem;
+  /* background-color: #eee7e7; */
 }
-.rent-section-model-body button{
-    margin:2rem;
-    background-color:blue;
-    color:white;
-    padding:.5rem;
-    width:80%;
-    margin-left:10%;
-    border-radius:8px;
-    font-size:1.5rem;
+
+.rent-card-img-section img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 12px;
 }
-.rent-section-form-MainBody{
+
+.rent-card-text-section {
+  padding: 1rem;
+  text-align: center;
+}
+
+.rent-card-text-section h3 {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+  font-weight: 600;
+}
+
+.rent-card-text-section p {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  color: #ccc;
+}
+
+.rent-card-text-section button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.rent-card-text-section button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin: 3px !important;
+}
+
+input:invalid {
+  border: 1px solid red;
+}
+
+/* Modal Body */
+.custom-modal .modal-content{
+  padding: 1rem;
+}
+.rent-section-model-body {
+  background-color: white;
+  color: black;
+  text-align: center;
+  padding: 2rem;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.rent-section-model-body img {
+  width: 50%;
+  max-width: 250px;
+  box-shadow: 1px 2px 4px lightgrey;
+}
+
+.rent-section-model-body h2 {
+  font-size: 2.5rem;
+  font-family: 'Roboto', sans-serif;
+  padding: 1rem;
+}
+
+.rent-section-model-body p {
+  margin: 1.5rem 1rem;
+  font-size: 1rem;
+}
+
+.rent-section-model-body label {
+  /* margin: 1rem 0.5rem; */
+  font-family: sans-serif;
+}
+
+.rent-section-model-body input {
+  background-color: #f4f4f4;
+  color: black;
+  padding: 0.5rem 1rem;
+  width: 95%;
+  margin: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: block;
+}
+
+.rent-section-model-body button {
+  background-color: #007bff;
+  color: white;
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  width: 80%;
+  cursor: pointer;
+}
+
+.rent-section-model-body button:hover {
+  background-color: #0056b3;
+}
+
+/* Form Main Body */
+.rent-section-form-MainBody {
   background: rgba(0, 0, 0, 0.2);
-  padding:1.5rem;
-  border:1px solid white;
-  text-align:start;
+  padding: 1.5rem;
+  border: 1px solid white;
+  text-align: left;
+  border-radius: 8px;
 }
 
-@media screen and (max-width:800px){
-  .rent-section-main-card{
-    width:45vw;
-    box-shadow:3px 2px 2px 4px lightgrey;
-    margin:1rem;
-    background-color:black;
-    color:white;
-    }
-  .rent-card-img-section{
-    width:100%;
-    height:40vh;
-    padding:.5rem;
-    background-color:white;
-    }
-  .rent-card-text-section h3{
-      padding:.7rem;
+/* Media Queries */
+@media screen and (max-width: 800px) {
+  .rent-section-main-card {
+    width: 45%;
   }
-  .rent-card-text-section p{
-      padding:.7rem;
+
+  .rent-card-img-section {
+    width: 100%;
+    height: 40vh;
+  }
+
+  .rent-card-text-section h3,
+  .rent-card-text-section p {
+    font-size: 1rem;
+  }
+
+  .Rent-module-top-left {
+    font-size: 1rem;
+  }
+
+  .Rent-module-bottom-bottom-section {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
-@media screen and (max-width:650px){
-  .rent-section-main-card{
-    width:80vw;
-    }
-  .rent-card-img-section{
-    width:100%;
-    height:40vh;
-    padding:.5rem;
-    background-color:white;
-    }
-  .Rent-module-top-left{
-    font-size:.7rem;
+@media screen and (max-width: 650px) {
+  .rent-section-main-card {
+    width: 80%;
+    margin: 1rem 0;
   }
-  .rent-card-text-section h3{
-      padding:.5rem;
+
+  .rent-card-img-section {
+    width: 100%;
+    height: 40vh;
   }
-  .rent-card-text-section p{
-      padding:.5rem;
+
+  .Rent-module-top-left {
+    font-size: 1rem;
+  }
+
+  .rent-card-text-section h3 {
+    font-size: 1.2rem;
+  }
+
+  .rent-card-text-section p {
+    font-size: 1rem;
   }
 }
-@media screen and (max-width:470px){
-  .Rent-module-top{
-    display:flex;
-    }
-  .rent-section-main-card{
-    width:90vw;
-    }
-  .rent-card-img-section{
-    width:100%;
-    height:38vh;
-    padding:.5rem;
-    background-color:white;
-    }
-  .Rent-module-top-left{
-    font-size:3vw;
+
+@media screen and (max-width: 470px) {
+  .Rent-module-top {
+    flex-direction: column;
+    align-items: center;
   }
-  .rent-card-text-section h3{
-      padding:.3rem;
+
+  .rent-section-main-card {
+    width: 90%;
   }
-  .rent-card-text-section p{
-      padding:.3rem;
+
+  .rent-card-img-section {
+    width: 100%;
+    height: 38vh;
+  }
+
+  .Rent-module-top-left {
+    font-size: 3vw;
+  }
+
+  .rent-card-text-section h3,
+  .rent-card-text-section p {
+    font-size: 1rem;
   }
 }
