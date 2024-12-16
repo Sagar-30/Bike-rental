@@ -18,7 +18,7 @@ app.post('/create-checkout-session', async (req, res) => {
       line_items: [
         {
           price_data: {
-            currency: 'usd',
+            currency: 'inr',
             product_data: {
               name: title, // Use title as the product name
               description: description, // Add the description to show on the checkout page (optional)
